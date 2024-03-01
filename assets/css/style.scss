@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Island+Moments&display=swap');
+
+.navbar-section{
+    .navbar-brand{
+        font-family: "Island Moments", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size:xx-large;
+    }
+    li{
+    margin-right: 30px;
+    }
+}
+
+
+.banner-section{
+    background-image: url(../images/black_banner.png);
+    width: 100%;
+    height: 610px;
+    position: relative;
+    background-size: cover;
+    .banner-content{
+        position: absolute;
+        margin-top: 200px;
+        padding-left: 100px;
+        label{
+            color: var(--primary-color);
+        }
+        p {
+            margin-top: 10px;
+            margin-bottom: 0px;
+        }
+        
+    }
+    .banner-data{
+        position: absolute;
+        display: flex;
+        bottom: 0px;
+        padding-left: 100px;
+        label{
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+        i{
+            color: var(--primary-color);
+            padding-left: 20px;
+        }
+    }
+}
+
+
+.about-section{
+    margin-top: 100px;
+    padding-left: 90px;
+    .aboutme{
+        padding: 40px;
+        .img-container{
+            .experiance{
+                position: absolute;
+                margin-top: -30px;
+                margin-left: 287px;
+                color: var(--primary-color);
+                label{
+                    font-size: xx-large;
+                    font-weight: bolder;  
+                }
+                p{
+                   font-size: x-small; 
+                   padding: 0px;
+                }
+            }
+            .img-box {
+                margin-top: -380px;
+                margin-left: 34px;
+            }
+        }
+        .about-data{
+            p{
+                padding-right: 100px;
+                margin-bottom: 40px;
+                text-align: justify;
+            }
+        }
+    }
+}
+
+
+.portfolio-section{
+    margin-top: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    .project-div{
+        margin-top: 100px;
+        .project-data{
+            padding: 60px;
+            p{
+                text-align: justify;
+            }
+        }
+        .img-container{
+            margin-top: -60px;
+            .img-box {
+                margin-top: -240px;
+                margin-left: 34px;
+            }
+        }
+    }
+
+    .graphic-div{
+        margin-top: 60px;
+        padding: 50px;
+        img{
+            &:hover{
+                border: 5px solid var(--primary-color);
+            }
+        }
+    }
+    .uiux-div{
+        margin-top: 80px;
+        color: var(--secondary-color);
+        font-size: small;
+        .card{
+            &:hover{
+                border: 5px solid var(--primary-color);
+            }
+        }
+    }
+}
+
+.resume-section{
+    margin-top: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    .resume-data{
+        margin-top: 50px;
+        h6{
+            padding-bottom: 20px
+        }
+        .timeline{
+            .timeline-with-icons {
+                border-left: 1px solid var(--primary-color);
+                position: relative;
+                list-style: none;
+              }
+              
+              .timeline-with-icons .timeline-item {
+                position: relative;
+              }
+              
+              .timeline-with-icons .timeline-item:after {
+                position: absolute;
+                display: block;
+                top: 0;
+              }
+              
+              .timeline-with-icons .timeline-icon {
+                position: absolute;
+                left: -48px;
+                background-color:var(--primary-color);
+                color:var(--primary-text-color)!important;
+                border-radius: 10%;
+                height: 31px;
+                width: 31px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              }
+        }
+    }
+}
+
+
+
+//testing code start
+
+
+
+//testing code end
+
+
+
+
+// Comactibility check
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    /* CSS */
+
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    /* CSS */ 
+    
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    /* CSS */
+    .banner-section{
+        .banner-content{
+            padding-left: 80px;
+            margin-top: 100px;
+        }
+        .banner-data{
+            display:inline-block!important;
+            padding-top: 30px;
+            padding-left: 80px;
+            
+        }
+    }
+    
+    .about-section{
+        padding-left: 50px;
+        .aboutme{
+            margin-top: 50px;
+            padding: 0px;
+            .about-data{
+                padding-top: 25px;
+            }
+        }
+    }
+
+    .col-card{
+        padding-bottom: 30px;
+    }
+  }
+
+
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    
+    /* CSS */
+    .banner-section{
+        .banner-content{
+            padding-left: 60px;
+            margin-top: 100px;
+            h1{
+                font-size: medium;
+            }
+        }
+        .banner-data{
+            display:inline-block!important;
+            padding-left: 60px;
+            padding-top: 30px;
+        }
+    }
+    
+
+    .about-section{
+        padding-left: 40px;
+        padding-top: 50px;
+        .aboutme{
+            margin-top: 50px;
+            padding: 0px;
+        }
+        .about-data{
+            padding-top: 20px;
+            padding-right: 0px;
+            p{
+                padding-right: 10px!important;
+            }
+        }
+    }
+
+    .col-card{
+        padding-bottom: 30px;
+    }
+
+  }
